@@ -1,0 +1,15 @@
+{
+  "db": {
+    "url": {
+      "local": "mongodb://localhost:27017/beusalon-assignment",
+      "production": ""
+    },
+    "options": {
+      "keepAlive": 1000,
+      "useNewUrlParser": true,
+      "useCreateIndex": true,
+      "useFindAndModify": false,
+      "useUnifiedTopology": true
+    }
+  }
+}

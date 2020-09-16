@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "0d8a76cb-8099-4933-a6e8-23456f803ed0",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get user list - /v1/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6060/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get user list - /v1/users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:6060/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "6060",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "437"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b5-fWVGzHnkXSnhA9QOkmhfVo+SMW4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 16 Sep 2020 03:03:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Action completed successfully\",\n    \"data\": [\n        {\n            \"name\": \"mukul\",\n            \"noOfOrders\": 4,\n            \"averageBillValue\": 1850,\n            \"userId\": \"5f617d9f313b481659ca5b4f\"\n        },\n        {\n            \"name\": \"ankita\",\n            \"noOfOrders\": 8,\n            \"averageBillValue\": 4127,\n            \"userId\": \"5f617d9f313b481659ca5b50\"\n        },\n        {\n            \"name\": \"ramesh\",\n            \"noOfOrders\": 4,\n            \"averageBillValue\": 1303,\n            \"userId\": \"5f617d9f313b481659ca5b51\"\n        },\n        {\n            \"name\": \"rahul\",\n            \"noOfOrders\": 7,\n            \"averageBillValue\": 4096,\n            \"userId\": \"5f617d9f313b481659ca5b4e\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Update order count for users - /v1/users/updateOrderCount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:6060/v1/users/updateOrderCount",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"v1",
+						"users",
+						"updateOrderCount"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update order count for users - /v1/users/updateOrderCount",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:6060/v1/users/updateOrderCount",
+							"host": [
+								"localhost"
+							],
+							"port": "6060",
+							"path": [
+								"v1",
+								"users",
+								"updateOrderCount"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-hqNpxSv4NKtv4c29h+WEKxDMEBI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 16 Sep 2020 03:04:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully updated\",\n    \"data\": {}\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
